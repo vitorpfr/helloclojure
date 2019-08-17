@@ -163,3 +163,43 @@
            )
       )
 
+
+
+;; Breaking records
+
+;function to be used on reduce
+(cond
+  (> x (:max record-data))
+  (-> record-data
+      (update :maxcount inc)
+      (assoc :max n))
+  (< x (:min record-data))
+  (-> record-data
+      (update :mincount inc)
+      (assoc :min n))
+  :else record-data)
+
+
+; final result
+(let [eval-score (fn [record-data x]
+                   (cond
+                     (> x (:max record-data))
+                     (-> record-data
+                         (update :maxcount inc)
+                         (assoc :max x))
+                     (< x (:min record-data))
+                     (-> record-data
+                         (update :mincount inc)
+                         (assoc :min x))
+                     :else record-data))
+      eval-result (reduce
+                    eval-score
+                    {:min (first scores)
+                     :max (first scores)
+                     :mincount 0
+                     :maxcount 0}
+                    (rest scores))]
+  (str
+    (:maxcount eval-result)
+    " "
+    (:mincount eval-result)))
