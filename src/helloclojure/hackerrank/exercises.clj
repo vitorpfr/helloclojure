@@ -203,3 +203,50 @@
     (:maxcount eval-result)
     " "
     (:mincount eval-result)))
+
+
+
+;; birthday chocolate
+
+;individual steps:
+; gets one subvector
+(subvec test-vector i (+ i m))
+
+; gets all sequential subvectors of length m inside test-vector
+(doseq [i (range 3)]
+  (println (subvec test-vector i (+ i m))))
+
+
+; transform initial sequence [1 2 3 4 5] into new one [[1 2] [2 3] [3 4] [4 5]]
+(reduce
+  (fn [vector i]
+    (let [remaining-vector (subvec s (count vector))
+          i-index (.indexOf remaining-vector i)]
+      (if (< (+ m (count vector)) (inc (count s)))
+        (conj vector (subvec remaining-vector i-index (+ i-index m)))
+        vector)
+      )
+    )
+  []
+  s)
+
+; transforms [[1 2][2 3]] into [3 5] (sums vectors inside vector)
+(map (fn [n] (reduce + n)) test-vector-2)
+
+
+; final result!
+(defn birthday [s d m]
+  (let [create-subsequences (fn [vector i]
+                              (let [remaining-vector (subvec s (count vector))
+                                    i-index (.indexOf remaining-vector i)]
+                                (if (< (+ m (count vector)) (inc (count s)))
+                                  (conj vector (subvec remaining-vector i-index (+ i-index m)))
+                                  vector)
+                                )
+                              )
+        subsequences-vector (reduce create-subsequences [] s)
+        subsequences-sum (map (fn [n] (reduce + n)) subsequences-vector)
+        sum-equal-to-birthday (count (filter #{d} subsequences-sum))]
+    sum-equal-to-birthday
+    )
+  )
