@@ -15,70 +15,46 @@
    (x-chop name "karate")))
 
 
-; stopped on "Hobbit Violence"
-; https://www.braveclojure.com/do-things/
+(def asym-hobbit-body-parts [{:name "head" :size 3}
+                             {:name "left-eye" :size 1}
+                             {:name "left-ear" :size 1}
+                             {:name "mouth" :size 1}
+                             {:name "nose" :size 1}
+                             {:name "neck" :size 2}
+                             {:name "left-shoulder" :size 3}
+                             {:name "left-upper-arm" :size 3}
+                             {:name "chest" :size 10}
+                             {:name "back" :size 10}
+                             {:name "left-forearm" :size 3}
+                             {:name "abdomen" :size 6}
+                             {:name "left-kidney" :size 1}
+                             {:name "left-hand" :size 2}
+                             {:name "left-knee" :size 2}
+                             {:name "left-thigh" :size 4}
+                             {:name "left-lower-leg" :size 3}
+                             {:name "left-achilles" :size 1}
+                             {:name "left-foot" :size 2}])
 
+; example of loop
+(loop [iteration 0
+       my-accumulator {}]
+  (println (str "Accumulator " my-accumulator))
+  (if (> iteration 3)
+    (println "Goodbye!")
+    (recur (inc iteration)
+           (assoc my-accumulator iteration "oi"))))
 
-(str 1 2 3)                                                 ; "123"
-(vector 1 2 3)                                              ; [1 2 3]
-(list 1 2 3)                                                ; (1 2 3)
-(hash-map :a 1 :b 2)                                        ; {:a 1, :b 2}
-{:a 1 :b 2}                                                 ; {:a 1, :b 2}
-(hash-set 1 1 2 3)                                          ; #{1 3 2}
-
-
-(defn add-100
-  [number]
-  (+ number 100))
-
-(add-100 5)                                                 ; 105
-
-(defn inc-maker
-  "Create a custom incrementor"
-  [inc-by]
-  #(+ % inc-by))
-
-(defn dec-maker
-  "Create a custom decrementor"
-  [dec-by]
-  #(- % dec-by))
-
-(def dec9 (dec-maker 9))                                    ; defines dec9
-
-(dec9 10)                                                   ; 1
-
-;ex 4
-(defn mapset
-  [function input]
-  (apply hash-set (map function input)))                    ; defines mapset
-
-(mapset inc [1 1 2 2])                                      ; #{3 2}
-
-;ex 5
-(defn matching-parts
-  [part]
-  [{:name (clojure.string/replace (:name part) #"^left-" "right-")
-    :size (:size part)}
-   {:name (clojure.string/replace (:name part) #"^left-" "center-")
-    :size (:size part)}
-   {:name (clojure.string/replace (:name part) #"^left-" "up-")
-    :size (:size part)}
-   {:name (clojure.string/replace (:name part) #"^left-" "down-")
-    :size (:size part)}])
-
-
-(defn symmetrize-body-parts
-  "Expects a seq of maps that have a :name and :size"
-  [asym-body-parts]
-  (loop [remaining-asym-parts asym-body-parts
-         final-body-parts []]
-    (if (empty? remaining-asym-parts)
-      final-body-parts
-      (let [[part & remaining] remaining-asym-parts]
-        (let [[first-add-part second-add-part third-add-part fourth-add-part] (matching-parts part)]
-          (recur remaining
-                 (into final-body-parts
-                       (set [part first-add-part second-add-part third-add-part fourth-add-part]))))))))
+; my implementation of reduce
+(defn my-reduce
+  ([f initial coll]
+   (loop [result initial
+          remaining coll]
+     (if (empty? remaining)
+       result
+       (recur (f result (first remaining))
+              (rest remaining)))))
+  ([f [head & tail]]
+   (my-reduce f head tail)))
 
 
 (def asym-hobbit-body-parts [{:name "head" :size 3}
@@ -101,4 +77,98 @@
                              {:name "left-achilles" :size 1}
                              {:name "left-foot" :size 2}])
 
+; exercises
 
+; 1
+(str "oi " "moço")
+(vector 1 2 3 4)
+(list 1 2 3 4)
+(hash-map :a 1 :b 2)
+(hash-set 1 1 2 3 4 4 4)
+
+; 2
+(defn add-100 [x] (+ 100 x))
+
+; 3
+(defn dec-maker [dec]
+  (fn [n] (- n dec)))
+; testing
+(def dec9 (dec-maker 9))
+(dec9 10)
+
+; 4
+(defn mapset [f coll]
+  (into #{} (map f coll)))
+
+(mapset inc [1 1 2 2])
+
+; 5
+(def asym-parts [{:name "head" :size 3}
+                 {:name "left-eye" :size 1}
+                 {:name "left-ear" :size 2}
+                 {:name "mouth" :size 1}
+                 {:name "nose" :size 1}])
+
+;(defn old-matching-part
+;  [{:keys [name size]}]
+;  {:name (clojure.string/replace name #"^left-" "right-")
+;   :size size})
+
+(defn matching-part [part]
+  (update part :name clojure.string/replace #"^left-" "right-"))
+
+; previous version
+;(defn symmetrize-body-parts
+;  "Expects a seq of maps that have a :name and :size"
+;  [asym-body-parts]
+;  (reduce (fn [final-body-parts part]
+;            (into final-body-parts (set [part (matching-part part)])))
+;          []
+;          asym-body-parts))
+
+(def part-prefixes ["left-"
+                    "right-"
+                    "top-"
+                    "bottom-"
+                    "center-"])
+
+; result
+(defn symmetrize-body-parts
+  "Expects a seq of maps that have a :name and :size"
+  [asym-body-parts]
+  (reduce (fn [final-body-parts part]
+            (if (re-find #"^left-" (:name part))
+              (into final-body-parts (map #(update part :name clojure.string/replace #"^left-" %)
+                                          part-prefixes))
+              (into final-body-parts [part])))
+          []
+          asym-body-parts))
+
+(symmetrize-body-parts asym-parts)
+
+(re-find #"^left-" "left-ear")
+
+; 6
+(def asym-parts-2 [{:name "head" :size 3}
+                   {:name "eye-1" :size 1}
+                   {:name "ear-1" :size 2}
+                   {:name "mouth" :size 1}
+                   {:name "nose" :size 1}])
+
+(re-find #"-1$" "eye-1")
+(re-find #"-1$" "head")
+
+(defn symmetrize-any-body-parts
+  [asym-body-parts n]
+  (let [symmetrical-parts-list (->> (range n)
+                                    (map inc)
+                                    (map #(str "-" %)))]
+    (reduce (fn [final-body-parts part]
+              (if (re-find #"-1$" (:name part))
+                (into final-body-parts (map #(update part :name clojure.string/replace #"-1$" %)
+                                            symmetrical-parts-list))
+                (into final-body-parts [part])))
+            []
+            asym-body-parts)))
+
+(symmetrize-any-body-parts asym-parts-2 15)
