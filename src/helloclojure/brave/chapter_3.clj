@@ -1,4 +1,4 @@
-(ns hello-clojure.chapter-3)
+(ns helloclojure.brave.chapter-3)
 
 ; main function
 (defn -main
@@ -158,6 +158,7 @@
 (re-find #"-1$" "eye-1")
 (re-find #"-1$" "head")
 
+; result
 (defn symmetrize-any-body-parts
   [asym-body-parts n]
   (let [symmetrical-parts-list (->> (range n)

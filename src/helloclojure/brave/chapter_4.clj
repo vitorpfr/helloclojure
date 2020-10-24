@@ -1,4 +1,4 @@
-(ns hello-clojure.brave.chapter-4)
+(ns helloclojure.brave.chapter-4)
 
 ; (partial) function
 (defn lousy-logger
