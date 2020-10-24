@@ -3,6 +3,8 @@
 
 (def filename "suspects.csv")
 
+(slurp filename)
+
 (def vamp-keys [:name :glitter-index])
 
 (defn str->int
