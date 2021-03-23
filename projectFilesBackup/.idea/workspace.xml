@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="23bfe161-7d4f-4f25-9057-01a50f3da388" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/helloclojure/brave/the-divine-cheese-code/the-divine-cheese-code.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helloclojure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/helloclojure.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Clojure Namespace" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1jFqWuUQ9JrhBCeuHet7nWgQlVW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="cursive.last.file.extension./Users/vitor.freitas/dev/pessoal/helloclojure/src" value="clj" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/helloclojure/brave" />
+      <recent name="$PROJECT_DIR$/src/helloclojure" />
+      <recent name="$PROJECT_DIR$/src/helloclojure/brave/fwpd" />
+      <recent name="$PROJECT_DIR$/src/helloclojure/brave/fwpd/src/fwpd" />
+    </key>
+  </component>
+  <component name="ReplState" timestamp="1604375802840">{:repl-history {:ide [], :local [{:command &quot;(or false nil)&quot;, :offset 14, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro my-or\n  [f s]\n  `(if f\n     f\n     s))&quot;, :offset 48, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(or)&quot;, :offset 4, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(or 1)&quot;, :offset 6, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(and 1)&quot;, :offset 7, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(macroexpand '(and 1 nil))&quot;, :offset 26, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(and 1 nil)&quot;, :offset 11, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(and 1 2 3 4)&quot;, :offset 13, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(and 1 2 3)&quot;, :offset 11, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(and 1 false 3)&quot;, :offset 15, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(macroexpand '(and 1 false 3))&quot;, :offset 30, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro my-and\n  ([] nil)\n  ([x] x)\n  ([x &amp; next]\n   `(let [y# x]\n      (if y# (and ~@next) y#))))&quot;, :offset 100, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro my-and\n  ([] nil)\n  ([x] x)\n  ([x &amp; next]\n   `(let [y# ~x]\n      (if y# (and ~@next) y#))))&quot;, :offset 101, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(my-and 1 false 3)&quot;, :offset 18, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(or false nil false 4 nil)&quot;, :offset 26, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(my-or 1 2 false)&quot;, :offset 17, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(my-or 1 2)&quot;, :offset 11, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(my-or false nil false 4 nil)&quot;, :offset 29, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(my-or nil false)&quot;, :offset 17, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(my-or false nil)&quot;, :offset 17, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(def character {:name       \&quot;Smooches McCutes\&quot;\n                :attributes {:intelligence 10\n                             :strength     4\n                             :dexterity    5}})&quot;, :offset 185, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;((comp :intelligence :attributes) character)&quot;, :offset 44, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defn attr [attribute]\n  (comp attribute :attributes))&quot;, :offset 54, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defn c-int (attr :intelligence))&quot;, :offset 33, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(def c-int (attr :intelligence))&quot;, :offset 32, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(c-int character)&quot;, :offset 17, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(partition 2 [\&quot;c-int\&quot; :intelligence\n              \&quot;c-str\&quot; :strength])&quot;, :offset 69, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro defattrs\n  [&amp; args]\n  `(let [pairs# (partition 2 ~args)]\n     (map #((def '(first %) (attr (second %))))\n          pairs#)))&quot;, :offset 134, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro defattrs\n  [&amp; args]\n  `(let [pairs# (partition 2 ~args)]\n     (do ~@(map println\n                ~pairs#))))&quot;, :offset 118, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro defattrs\n  [&amp; args]\n  `(do ~@(map println\n              (partition 2 ~args))))&quot;, :offset 88, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro defattrs\n  [&amp; args]\n  `(do ~@(map println\n              (partition 2 args))))&quot;, :offset 87, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro defattrs\n  [&amp; args]\n  `(do ~@(map str\n              (partition 2 args))))&quot;, :offset 83, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro defattrs\n  [&amp; args]\n  `(do ~@(map (fn [arg] (list println arg))\n              (partition 2 args))))&quot;, :offset 109, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defattrs c-int :intelligence)&quot;, :offset 30, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro defattrs\n  [&amp; args]\n  `(do ~@(map (fn [arg] (list println ~@arg))\n              (partition 2 args))))&quot;, :offset 111, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(macroexpand '(defattrs c-int :intelligence))&quot;, :offset 45, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro\n  [&amp; args]\n  `(do ~@(map (fn [arg] (list inc arg))\n              args)))&quot;, :offset 93, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(test-macro [1 2 3 4])&quot;, :offset 22, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro\n  [&amp; args]\n  `(map (fn [arg] (list inc arg))\n        args))&quot;, :offset 80, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(test-macro 1 2 3 4)&quot;, :offset 20, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro\n  [&amp; args]\n  `(map (fn [arg] (list inc arg))\n        ~args))&quot;, :offset 81, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro\n  [&amp; args]\n  `(map (fn [pair] (list def (first pair) (second pair)))\n        (partition 2 ~args)))&quot;, :offset 119, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro\n  [&amp; args]\n  `(do ~@(map (fn [pair] (list def (first pair) (second pair)))\n              (partition 2 ~args))))&quot;, :offset 132, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro\n  [&amp; args]\n  `(do ~@(map (fn [pair] (list 'def (first pair) (second pair)))\n              (partition 2 ~args))))&quot;, :offset 133, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(test-macro one 1 two 2)&quot;, :offset 24, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro \n  [fn-name &amp; args]\n  `(do\n     ~@(map (fn [arg] (list fn-name arg)) args)))&quot;, :offset 97, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro\n  [fn-name &amp; args]\n  `(do\n     ~@(map (fn [arg] (list def one arg)) args)))&quot;, :offset 96, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(test-macro println 1 2)&quot;, :offset 24, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro\n  [fn-name &amp; args]\n  `(do\n     ~@(map (fn [arg] (list ~def one arg)) args)))&quot;, :offset 97, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro\n  [&amp; args]\n  `(def (first args) (second args)))&quot;, :offset 68, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro\n  [&amp; args]\n  `(def one (second args)))&quot;, :offset 59, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro\n  [&amp; args]\n  `(def one (second ~{args})))&quot;, :offset 62, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro\n  [&amp; args]\n  `(def one (second ~args)))&quot;, :offset 60, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro\n  [&amp; args]\n  `(def ~one (second ~args)))&quot;, :offset 61, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro\n  [name body]\n  `(def ~name (second ~body)))&quot;, :offset 65, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro\n  [name body]\n  `(def ~name ~body))&quot;, :offset 56, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(test-macro one 1)&quot;, :offset 18, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-2\n  [&amp; args]\n  `(let [name# (first ~args)\n         body# (second ~args)]\n     (def name# body#)))&quot;, :offset 118, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-2\n  [&amp; args]\n  `(let [name# (first ~args)\n         body# (second ~args)]\n     (def name# 1)))&quot;, :offset 114, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-2\n  [&amp; args]\n  `(let [name# (~first ~args)]\n     (def name# 1)))&quot;, :offset 85, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-2\n  [&amp; args]\n  `(let [name# (first ~args)]\n     (def name# 1)))&quot;, :offset 84, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-2\n  [&amp; args]\n  `(def ~@args))&quot;, :offset 50, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [&amp; args]\n  `(map (fn [pair] (list def ~@pair)) args))&quot;, :offset 78, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [&amp; args]\n  `(map (fn [pair] pair) \n        args))&quot;, :offset 74, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [&amp; args]\n  `(map (fn [pair] pair) \n        ~args))&quot;, :offset 75, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [&amp; args]\n  `(map (fn [pair] (list println pair)) \n        ~args))&quot;, :offset 90, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [&amp; args]\n  `(map (fn [pair] (list pair)) \n        ~args))&quot;, :offset 82, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [&amp; args]\n  `(map (fn [pair] (list def ~@pair))\n        ~args))&quot;, :offset 87, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [&amp; args]\n  `(map `(~fn [pair] (~list def @~pair))\n        ~args))&quot;, :offset 90, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [&amp; args]\n  `(map `(fn [pair] (~list def @~pair))\n        ~args))&quot;, :offset 89, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [&amp; args]\n  `(map `(fn [pair] (~list def ~@pair))\n        ~args))&quot;, :offset 89, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [&amp; args]\n  `(map #(`(def ~@%))\n        ~args))&quot;, :offset 71, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [&amp; args]\n  `(do\n     ~@(map #(`(def ~@%))\n            ~args)))&quot;, :offset 87, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [&amp; args]\n  `(do\n     ~@(map #((def ~@%))\n            ~args)))&quot;, :offset 86, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [&amp; args]\n  `(do\n     ~@(map #((list def ~@%))\n            ~args)))&quot;, :offset 91, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [&amp; args]\n  `(do\n     ~@(map #((list 'def ~@%))\n            ~args)))&quot;, :offset 92, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [&amp; args]\n  `(do\n     ~@(map (fn [arg] (list test-macro-2 arg))\n            ~args)))&quot;, :offset 108, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [&amp; args]\n  `(do\n     ~@(map (fn [arg] (list ~test-macro-2 arg))\n            ~args)))&quot;, :offset 109, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(test-macro-2 one 1)&quot;, :offset 20, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;one&quot;, :offset 3, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-4\n  [args]\n  `(apply def ~@args))&quot;, :offset 54, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-4\n  [args]\n  `(def ~@args))&quot;, :offset 48, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(test-macro-4 [one 1])&quot;, :offset 22, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-2\n  [args]\n  `(def ~@args))&quot;, :offset 48, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(test-macro-2 [one 1])&quot;, :offset 22, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [macroname &amp; args]\n  `(do\n     ~@(map (fn [arg] (list macroname arg))\n            ~args)))&quot;, :offset 115, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(test-macro-3 test-macro-2 [[one 1]])&quot;, :offset 37, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [macroname &amp; args]\n  `(do\n     ~@(map (fn [arg] (list test-macro-2 arg))\n            ~args)))&quot;, :offset 118, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [args]\n  `(do\n     ~@(map (fn [arg] (list test-macro-2 arg))\n            ~args)))&quot;, :offset 106, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defn create-var\n  [[name val]]\n  `(def name ~val))&quot;, :offset 51, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [args]\n  `(do\n     ~@(map (fn [arg] (create-var arg))\n            ~args)))&quot;, :offset 99, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defn create-var\n  [name val]\n  `(def ~name ~val))&quot;, :offset 50, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defn create-var\n  [name val]\n  `(def name ~val))&quot;, :offset 49, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defn create-var\n  [name val]\n  (list 'def 'name val))&quot;, :offset 54, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(create-var one 1)&quot;, :offset 18, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [args]\n  `(do\n     ~@(map #(apply create-var %)\n            ~args)))&quot;, :offset 93, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defn create-var\n  [[name val]]\n  (list 'def 'name val))&quot;, :offset 56, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(create-var [one 1])&quot;, :offset 20, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(defmacro test-macro-3\n  [args]\n  `(do\n     ~@(map #(create-var %)\n            ~args)))&quot;, :offset 87, :ns &quot;helloclojure.brave.chapter-8&quot;} {:command &quot;(test-macro-3 [[one 1]])&quot;, :offset 24, :ns &quot;helloclojure.brave.chapter-8&quot;}], :remote []}}</component>
+  <component name="RunManager" selected="Clojure REPL.REPL for helloclojure">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="REPL for helloclojure" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="helloclojure" />
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="NREPL" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="replPortFileType" value="STANDARD" />
+      <setting name="customPortFile" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="user" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="helloclojure" />
+      <setting name="path" value="$PROJECT_DIR$/src/helloclojure/brave/fwpd/project.clj" />
+      <setting name="namespace" value="" />
+      <setting name="execution" value="INTELLIJ" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/helloclojure/brave/fwpd" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Clojure REPL.REPL for helloclojure" />
+        <item itemvalue="Clojure Application.user" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23bfe161-7d4f-4f25-9057-01a50f3da388" name="Default Changelist" comment="" />
+      <created>1603410222132</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603410222132</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1398" height="231" key="GridCell.Tab.0.bottom" timestamp="1603576439742">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="231" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1603576439742" />
+    <state width="1398" height="231" key="GridCell.Tab.0.center" timestamp="1603576439741">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="231" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1603576439741" />
+    <state width="1398" height="231" key="GridCell.Tab.0.left" timestamp="1603576439741">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="231" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1603576439741" />
+    <state width="1398" height="231" key="GridCell.Tab.0.right" timestamp="1603576439742">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="231" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1603576439742" />
+    <state x="418" y="216" width="604" height="490" key="find.popup" timestamp="1604357944660">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="418" y="216" width="604" height="490" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1604357944660" />
+    <state x="375" y="213" width="781" height="676" key="search.everywhere.popup" timestamp="1604264747890">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="375" y="213" width="781" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1604264747890" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
